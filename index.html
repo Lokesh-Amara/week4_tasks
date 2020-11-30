@@ -25,8 +25,8 @@
                 <td>&nbsp</td>
                 <td colspan="2">
                     *<b> Whether citizen of India </b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    <input type="radio" > Yes </input>&nbsp&nbsp&nbsp&nbsp
-                    <input type="radio"> No </input>
+                    <input type="radio" name="citizen" > Yes </input>&nbsp&nbsp&nbsp&nbsp
+                    <input type="radio" name="citizen"> No </input>
                 </td>
             </tr>
             <tr>
@@ -42,7 +42,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td colspan="2"><b>Title</b>  &nbsp Shri/Mr <input type="radio"> &nbsp Smt./Mrs. <input type="radio"> &nbsp Kumari/Ms <input type="radio"> &nbsp M/s</td>
+                <td colspan="2"><b>Title</b>  &nbsp Shri/Mr <input type="radio" name="title"> &nbsp Smt./Mrs. <input type="radio"name="title"> &nbsp Kumari/Ms <input type="radio" name="title"> &nbsp M/s <input type="radio" name="title"></td>
             </tr>
             <tr>
                 <td></td>
@@ -67,7 +67,7 @@
             <tr>
                 <td></td>
                 <td width="50%"><b>Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</b></td>
-                <td><input type="radio">Yes</input> &nbsp &nbsp <input type="radio">No</input></td>
+                <td><input type="radio" name="mother">Yes</input> &nbsp &nbsp <input type="radio" name="mother">No</input></td>
             </tr>
             <tr>
                 <td><input type="checkbox"></td>
@@ -99,7 +99,7 @@
                     *<b>4. Select Parent name which is to be printed on the card</b><br>
                     (In case no option is provided then PAN card will be issued with father's name)
                 </td>
-                <td>Father Name &nbsp <input type="radio"> &nbsp &nbsp Mother Name &nbsp <input type="radio"></td>
+                <td>Father Name &nbsp <input type="radio" name="nameoncard"> &nbsp &nbsp Mother Name &nbsp <input type="radio" name="nameoncard"></td>
             </tr>
             <tr>
                 <td><input type="checkbox"></td>
@@ -164,7 +164,7 @@
             <tr>
                 <td><input type="checkbox"></td>
                 <td>*<b> 6. Gender</b></td>
-                <td> &nbsp Male&nbsp  <input type="radio"> &nbsp &nbsp Female&nbsp  <input type="radio"> &nbsp &nbsp TransGender&nbsp  <input type="radio"></td>
+                <td> &nbsp Male&nbsp  <input type="radio" name="gender"> &nbsp &nbsp Female&nbsp  <input type="radio" name="gender"> &nbsp &nbsp TransGender&nbsp  <input type="radio" name="gender"></td>
             </tr>
             <tr>
                 <td><input type="checkbox"></td>
@@ -177,7 +177,7 @@
             <tr>
                 <td><input type="checkbox"></td>
                 <td><b>9. Address for Communication</b></td>
-                <td>Residential   &nbsp <input type="radio"> &nbsp &nbsp    Office &nbsp <input type="radio"> </td>
+                <td>Residential   &nbsp <input type="radio" name="address"> &nbsp &nbsp    Office &nbsp <input type="radio" name="address"> </td>
             </tr>
             <tr>
                 <td></td>
@@ -301,8 +301,8 @@
                               </select></td>
                         </tr>
                         <tr>
-                            <td>   <input type="radio"> &nbsp Mobile No.</td>
-                            <td>   <input type="radio"> &nbsp  Telephone No.   </td>
+                            <td>   <input type="radio" name="phoneNumber"> &nbsp Mobile No.</td>
+                            <td>   <input type="radio" name="phoneNumber"> &nbsp  Telephone No.   </td>
                         </tr>
                         <tr>
                             <td>Area/STD Code <br><input type="text"> </td>
@@ -319,7 +319,7 @@
             <tr>
                 <td></td>
                 <td><b>In case of a citizen of India, then</b></td>
-                <td><input type="radio"> &nbsp AADHAAR &nbsp &nbsp <input type="radio"> &nbsp EID</td>
+                <td><input type="radio" name="citizenship"> &nbsp AADHAAR &nbsp &nbsp <input type="radio" name="citizenship"> &nbsp EID</td>
             </tr>
             <tr>
                 <td><input type="checkbox"></td>
@@ -404,7 +404,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td colspan="2"><b>Whether you wish to have?</b>  <input type="radio"> &nbsp Physical PAN Card & e-PAN Card &nbsp <input type="radio"> &nbsp  Only e-PAN Card &nbsp  <u> Fees Applicable</u></td>
+                <td colspan="2"><b>Whether you wish to have?</b>  <input type="radio" name="panType"> &nbsp Physical PAN Card & e-PAN Card &nbsp <input type="radio" name="panType"> &nbsp  Only e-PAN Card &nbsp  <u> Fees Applicable</u></td>
             </tr>
             <tr>
                 <td></td>
@@ -423,13 +423,13 @@
                 <td colspan="2"><b>2. Payment Details</b></td>
             </tr>
             <tr>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="onlinePayment"></td>
                 <td colspan="2"><b>Online Payment</b></td>
             </tr>
         </table>
 
-        For Paperless PAN Application: &nbsp <input type="radio">Yes &nbsp &nbsp<input type="radio"> No <br><br>
-        <input type="radio"> DSC <select name=DSC>
+        For Paperless PAN Application: &nbsp <input type="radio" name="paperless">Yes &nbsp &nbsp<input type="radio" name="paperless"> No <br><br>
+        <input type="radio" name="dsc"> DSC <select name=DSC>
             <option value="" >-- Please Select -- &nbsp &nbsp &nbsp &nbsp
             <option value="01" > Minor
             <option value="07" > Lunatic/Idiot
